@@ -7,9 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int tempoGastoNaViagem = scanner.nextInt();
         int velocidadeMedia = scanner.nextInt();
-        float tempoGastoNaViagemFloat = (float) tempoGastoNaViagem;
-        float velocidadeMediaFloat = (float) velocidadeMedia;
-        float litrosNecessarios = (velocidadeMediaFloat / 12) * tempoGastoNaViagemFloat;
+        float litrosNecessarios = (velocidadeMedia / 12f) * tempoGastoNaViagem;
         System.out.printf("%.3f\n", litrosNecessarios);
     }
 }
