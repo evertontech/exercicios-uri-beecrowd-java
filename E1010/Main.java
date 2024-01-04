@@ -11,9 +11,7 @@ public class Main {
         scanner.nextInt();
         int numeroDePeca2 = scanner.nextInt();
         float valorDaPeca2 = scanner.nextFloat();
-
         float valorTotal = numeroDePeca1 * valorDaPeca1 + numeroDePeca2 * valorDaPeca2;
-
 
         System.out.printf("VALOR A PAGAR: R$ %.2f\n", valorTotal);
     }
