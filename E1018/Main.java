@@ -10,10 +10,10 @@ public class Main {
 
         System.out.println(valor);
 
-        for (int i = 0; i < 7; ++i){
-            quantidadeDeNotas = valor / valoresDeNotas[i];
-            valor = valor - (quantidadeDeNotas * valoresDeNotas[i]);
-            System.out.printf("%d nota(s) de R$ %d,00\n", quantidadeDeNotas, valoresDeNotas[i]);
+        for (int valorDaNota : valoresDeNotas) {
+            quantidadeDeNotas = valor / valorDaNota;
+            valor = valor - (quantidadeDeNotas * valorDaNota);
+            System.out.printf("%d nota(s) de R$ %d,00\n", quantidadeDeNotas, valorDaNota);
         }
     }
 }
