@@ -1,5 +1,6 @@
 package E1042;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -9,60 +10,15 @@ public class Main {
         int b = scanner.nextInt();
         int c = scanner.nextInt();
 
-        if (a > b) {
-            if (a > c) {
-                if (b > c){
-                    System.out.println(c);
-                    System.out.println(b);
-                    System.out.println(a);
-                    System.out.println();
-                    System.out.println(a);
-                    System.out.println(b);
-                    System.out.println(c);
-                } else {
-                    System.out.println(b);
-                    System.out.println(c);
-                    System.out.println(a);
-                    System.out.println();
-                    System.out.println(a);
-                    System.out.println(b);
-                    System.out.println(c);
-                }
-            } else {
-                System.out.println(b);
-                System.out.println(a);
-                System.out.println(c);
-                System.out.println();
-                System.out.println(a);
-                System.out.println(b);
-                System.out.println(c);
-            }
-        } else if (b > c) {
-                if (a > c) {
-                    System.out.println(c);
-                    System.out.println(a);
-                    System.out.println(b);
-                    System.out.println();
-                    System.out.println(a);
-                    System.out.println(b);
-                    System.out.println(c);
-                } else {
-                    System.out.println(a);
-                    System.out.println(c);
-                    System.out.println(b);
-                    System.out.println();
-                    System.out.println(a);
-                    System.out.println(b);
-                    System.out.println(c);
-                }
-        } else {
-            System.out.println(a);
-            System.out.println(b);
-            System.out.println(c);
-            System.out.println();
-            System.out.println(a);
-            System.out.println(b);
-            System.out.println(c);
-        }
+        int[] vetor = {a, b, c};
+        Arrays.sort(vetor);
+
+        System.out.println(vetor[0]);
+        System.out.println(vetor[1]);
+        System.out.println(vetor[2]);
+        System.out.println();
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
     }
 }
