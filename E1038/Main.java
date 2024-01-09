@@ -7,30 +7,17 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int codigo = scanner.nextInt();
         int quantidadeItem = scanner.nextInt();
-        double preco;
-        double total;
 
-        if (codigo == 1){
-            preco = 4;
-            total = preco * quantidadeItem;
-            System.out.printf("Total: R$ %.2f\n", total);
-        } else if (codigo == 2){
-            preco = 4.50;
-            total = preco * quantidadeItem;
-            System.out.printf("Total: R$ %.2f\n", total);
-        } else if (codigo == 3){
-            preco = 5.00;
-            total = preco * quantidadeItem;
-            System.out.printf("Total: R$ %.2f\n", total);
-        } else if (codigo == 4){
-            preco = 2.00;
-            total = preco * quantidadeItem;
-            System.out.printf("Total: R$ %.2f\n", total);
-        } else if (codigo == 5){
-            preco = 1.50;
-            total = preco * quantidadeItem;
-            System.out.printf("Total: R$ %.2f\n", total);
-        }
+        double preco = switch (codigo) {
+            case 1 -> 4;
+            case 2 -> 4.50;
+            case 3 -> 5.00;
+            case 4 -> 2.00;
+            case 5 -> 1.50;
+            default -> 0.00;
+        };
 
+        double total = preco * quantidadeItem;
+        System.out.printf("Total: R$ %.2f\n", total);
     }
 }
