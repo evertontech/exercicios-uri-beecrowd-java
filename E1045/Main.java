@@ -1,5 +1,6 @@
 package E1045;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -12,42 +13,11 @@ public class Main {
         double ladoB;
         double ladoC;
 
-        if (a > b) {
-            if (a > c) {
-                if (b > c) {
-                    ladoA = a;
-                    ladoB = b;
-                    ladoC = c;
-                    // c < b < a
-                } else {
-                    ladoA = a;
-                    ladoB = c;
-                    ladoC = b;
-                    // b < c < a
-                }
-            } else {
-                ladoA = c;
-                ladoB = a;
-                ladoC = b;
-                // c > a > b
-            }
-        } else if (b > c) {
-            ladoA = b;
-            if (a > c) {
-                ladoB = a;
-                    ladoC = c;
-                    // b > a > c
-                } else {
-                ladoB = c;
-                    ladoC = a;
-                    // b > c > a
-                }
-        } else {
-            ladoA = c;
-            ladoB = b;
-            ladoC = a;
-            // c > b > a
-        }
+        double[] vetor = {a, b, c};
+        Arrays.sort(vetor);
+        ladoC = vetor[0];
+        ladoB = vetor[1];
+        ladoA = vetor[2];
 
         double quadradoLadoA = Math.pow(ladoA, 2);
         double quadradoLadoB = Math.pow(ladoB, 2);
