@@ -6,25 +6,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int ddd = scanner.nextInt();
+        String cidade = switch (ddd) {
+            case 11 -> "Sao Paulo";
+            case 21 -> "Rio de Janeiro";
+            case 27 -> "Vitoria";
+            case 31 -> "Belo Horizonte";
+            case 32 -> "Juiz de Fora";
+            case 61 -> "Brasilia";
+            case 71 -> "Salvador";
+            case 19 -> "Campinas";
+            default -> "DDD nao cadastrado";
+        };
 
-        if (ddd == 11) {
-            System.out.println("Sao Paulo");
-        } else if (ddd == 27) {
-            System.out.println("Vitoria");
-        } else if (ddd == 31) {
-            System.out.println("Belo Horizonte");
-        } else if (ddd == 32) {
-            System.out.println("Juiz de Fora");
-        } else if (ddd == 61) {
-            System.out.println("Brasilia");
-        } else if (ddd == 71) {
-            System.out.println("Salvador");
-        } else if (ddd == 19) {
-            System.out.println("Campinas");
-        } else if (ddd == 21) {
-            System.out.println("Rio de Janeiro");
-        } else {
-            System.out.println("DDD nao cadastrado");
-        }
+        System.out.println(cidade);
     }
 }
