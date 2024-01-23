@@ -22,6 +22,5 @@ public class Main {
 
         System.out.println(contador + " valores positivos");
         System.out.printf("%.1f\n", media);
-
     }
 }
