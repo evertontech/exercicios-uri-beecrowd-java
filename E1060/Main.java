@@ -6,15 +6,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int contador = 0;
-        int i;
 
-        for (i = 1; i <= 6; ++i){
+        for (int i = 1; i <= 6; ++i){
             float valor = scanner.nextFloat();
             if (valor > 0) {
-                contador = contador + 1;
+                contador++;
             }
         }
 
-        System.out.printf("%d valores positivos\n", contador);
+        System.out.println(contador + " valores positivos");
     }
 }
