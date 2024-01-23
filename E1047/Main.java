@@ -6,29 +6,25 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int horaInicial = scanner.nextInt();
-        int horaFinal = scanner.nextInt();
         int minutoInicial = scanner.nextInt();
+        int horaFinal = scanner.nextInt();
         int minutoFinal = scanner.nextInt();
-        int totalHorasInicial;
-        int totalHorasFinais;
-        int totalMinutos;
-        int totalHoras;
-        int resto;
+        int totalMinutosInicial = (horaInicial * 60) + minutoInicial;
+        int totalMinutosFinais = (horaFinal * 60) + minutoFinal;
+        int duracaoJogoEmMinutos;
 
-//        if (horaInicial == horaFinal) {
-//
-//        }
+        if (totalMinutosInicial < totalMinutosFinais) {
+            duracaoJogoEmMinutos = totalMinutosFinais - totalMinutosInicial;
+        } else {
+            duracaoJogoEmMinutos = (24 * 60) - totalMinutosInicial + totalMinutosFinais;
+        }
 
-        totalHorasInicial = (horaInicial * 60) + minutoInicial;
-        totalHorasFinais = (horaFinal * 60) + minutoFinal;
-        totalMinutos = totalHorasFinais - totalHorasInicial;
-//        resto = totalMinutos / 60; // 122 % 60
-//        totalHoras = (totalMinutos - resto) / 60;
-        System.out.println(totalMinutos);
-        //System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", totalHoras, totalMinutos);
+        int duracaoJogoEmHoras = duracaoJogoEmMinutos / 60;
+        duracaoJogoEmMinutos = duracaoJogoEmMinutos % 60;
 
-
-
+        System.out.println("O JOGO DUROU " + duracaoJogoEmHoras +  " HORA(S) E "+ duracaoJogoEmMinutos + " MINUTO(S)");
     }
 }
+
+
 
