@@ -8,11 +8,10 @@ public class Main {
         int n = scanner.nextInt();
         int in = 0;
         int out = 0;
-        int x;
 
         for (int i = 0; i < n; ++i) {
-            x = scanner.nextInt();
-            if (x >= 0 && x <= 20) {
+            int x = scanner.nextInt();
+            if (x >= 10 && x <= 20) {
                 in = in + 1;
             } else {
                 out = out + 1;
