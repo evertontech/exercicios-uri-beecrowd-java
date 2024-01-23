@@ -9,20 +9,24 @@ public class Main {
 
         for (int i = 0; i < n; ++i) {
             int x = scanner.nextInt();
+
             if (x == 0) {
                 System.out.println("NULL");
-            } else if (x % 2 == 0) {
-                if (x > 0) {
-                    System.out.println("EVEN POSITIVE");
-                } else {
-                    System.out.println("EVEN NEGATIVE");
+
+            } else {
+                if (x % 2 == 0) {
+                    System.out.print("EVEN ");
                 }
-            } else if (x % 2 != 0){
-                    if (x > 0) {
-                        System.out.println("ODD POSITIVE");
-                    } else {
-                        System.out.println("ODD NEGATIVE");
-                    }
+                else {
+                    System.out.print("ODD ");
+                }
+
+                if (x > 0) {
+                    System.out.println("POSITIVE");
+                }
+                else {
+                    System.out.println("NEGATIVE");
+                }
             }
         }
     }
