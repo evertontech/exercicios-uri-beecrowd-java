@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        int n = new Scanner(System.in).nextInt();
 
         for (int i = 1; i <= 10000; ++i) {
             if (i % n == 2) {
