@@ -8,9 +8,9 @@ public class Main {
         int inter = 0;
         int gremio = 0;
         int empate = 0;
-        int n = 0;
+        int n;
 
-        while (n != 2) {
+        do {
             int golsInter = scanner.nextInt();
             int golsGremio = scanner.nextInt();
 
@@ -24,7 +24,7 @@ public class Main {
             System.out.println("Novo grenal (1-sim 2-nao)");
             n = scanner.nextInt();
 
-        }
+        } while (n != 2);
 
         int grenais = inter + gremio + empate;
 
