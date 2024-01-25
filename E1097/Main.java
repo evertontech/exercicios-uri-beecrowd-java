@@ -2,13 +2,11 @@ package E1097;
 
 public class Main {
     public static void main(String[] args) {
-        int i = 0;
-        int j = 0;
 
-        for (i = 1, j = 7; i <= 9; i = i + 2, j = j + 2) {
-            System.out.println("I=" + i + " J=" + (j));
-            System.out.println("I=" + i + " J=" + (j - 1));
-            System.out.println("I=" + i + " J=" + (j - 2));
+        for (int i = 1; i <= 9; i = i + 2) {
+            for (int j = i + 6; j >= i + 4; j--) {
+                System.out.println("I=" + i + " J=" + j);
+            }
         }
     }
 }
