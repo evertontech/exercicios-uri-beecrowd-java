@@ -5,12 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int x = 0;
-        int y = 0;
 
         while (true) {
-            x = scanner.nextInt();
-            y = scanner.nextInt();
+            int x = scanner.nextInt();
+            int y = scanner.nextInt();
 
             if (x > y) {
                 System.out.println("Decrescente");
