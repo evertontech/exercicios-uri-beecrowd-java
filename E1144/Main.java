@@ -7,15 +7,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
 
-        System.out.println("1 1 1");
-        System.out.println("1 2 2");
+        for (int i = 1; i <= n; ++i) {
+            int j2 = (int) Math.pow(i, 2);
+            int j3 = (int) Math.pow(i, 3);
 
-        for (int i = 2; i <= n; ++i) {
-            double j2 = Math.pow(i, 2);
-            double j3 = Math.pow(i, 3);
-
-            System.out.printf("%d %.0f %.0f\n", i, j2, j3);
-            System.out.printf("%d %.0f %.0f\n", i, j2 + 1, j3 + 1);
+            System.out.println(i + " " + j2 + " " + j3);
+            System.out.println(i + " " + (j2 + 1) + " " +  (j3 + 1));
         }
     }
 }
