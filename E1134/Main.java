@@ -10,9 +10,9 @@ public class Main {
         int contadorGasolina = 0;
         int contadorDiesel = 0;
 
-
         while (valorDeEntrada != 4) {
             valorDeEntrada = scanner.nextInt();
+
             if (valorDeEntrada == 1) {
                 contadorAlcool = contadorAlcool + 1;
             }
