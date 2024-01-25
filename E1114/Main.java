@@ -14,7 +14,6 @@ public class Main {
                 System.out.println("Senha Invalida");
             }
         }
-
         System.out.println("Acesso Permitido");
     }
 }
