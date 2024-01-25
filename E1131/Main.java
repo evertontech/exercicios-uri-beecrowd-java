@@ -32,15 +32,13 @@ public class Main {
         System.out.println("Inter:" + inter);
         System.out.println("Gremio:" + gremio);
         System.out.println("Empates:" + empate);
+
         if (inter > gremio) {
-            //String vitoriaInter = "inter";
             System.out.println("Inter venceu mais");
         } else if (inter < gremio) {
-            //String vitoriaGremio = "gremio";
             System.out.println("Gremio venceu mais");
         } else {
-            //String maisEmpate = "empate";
-            System.out.println("Empate");
+            System.out.println("Nao houve vencedor");
         }
     }
 }
