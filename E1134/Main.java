@@ -5,26 +5,28 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int valorDeEntrada = scanner.nextInt();
+        int quantidadeDeEntrada;
         int contadorAlcool = 0;
         int contadorGasolina = 0;
         int contadorDiesel = 0;
 
-        while (valorDeEntrada != 4) {
-            valorDeEntrada = scanner.nextInt();
+        do {
+            quantidadeDeEntrada = scanner.nextInt();
 
-            if (valorDeEntrada == 1) {
+            if (quantidadeDeEntrada == 1) {
                 contadorAlcool = contadorAlcool + 1;
             }
 
-            if (valorDeEntrada == 2) {
+            if (quantidadeDeEntrada == 2) {
                 contadorGasolina = contadorGasolina + 1;
             }
 
-            if (valorDeEntrada == 3) {
+            if (quantidadeDeEntrada == 3) {
                 contadorDiesel = contadorDiesel + 1;
             }
-        }
+
+        } while (quantidadeDeEntrada != 4);
+
 
         System.out.println("MUITO OBRIGADO");
         System.out.println("Alcool: " + contadorAlcool);
