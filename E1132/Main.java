@@ -9,18 +9,17 @@ public class Main {
         int y = scanner.nextInt();
         int soma = 0;
 
-        if (x < y) {
+        if (x > y) {
             int temp = x;
             x = y;
             y = temp;
         }
 
         for (int i = x; i <= y; ++i){
-            if (i % 13 == 0) {
+            if (i % 13 != 0) {
                 soma = soma + i;
             }
         }
-
         System.out.println(soma);
     }
 }
