@@ -13,20 +13,13 @@ public class Main {
         do {
             quantidadeDeEntrada = scanner.nextInt();
 
-            if (quantidadeDeEntrada == 1) {
-                contadorAlcool = contadorAlcool + 1;
-            }
-
-            if (quantidadeDeEntrada == 2) {
-                contadorGasolina = contadorGasolina + 1;
-            }
-
-            if (quantidadeDeEntrada == 3) {
-                contadorDiesel = contadorDiesel + 1;
+            switch (quantidadeDeEntrada) {
+                case 1: contadorAlcool++; break;
+                case 2: contadorGasolina++; break;
+                case 3: contadorDiesel++; break;
             }
 
         } while (quantidadeDeEntrada != 4);
-
 
         System.out.println("MUITO OBRIGADO");
         System.out.println("Alcool: " + contadorAlcool);
