@@ -8,7 +8,8 @@ public class Main {
         int contador = 0;
         float somaIdade = 0;
 
-        do {
+        while (true) {
+
             int idade = scanner.nextInt();
 
             if (idade >= 0) {
@@ -18,8 +19,7 @@ public class Main {
             } else {
                 break;
             }
-
-        } while (true);
+        }
 
         float mediaIdade = somaIdade / contador;
         System.out.printf("%.2f\n", mediaIdade);
