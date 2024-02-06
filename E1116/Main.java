@@ -10,14 +10,12 @@ public class Main {
         for (int i = 0; i < n; ++i) {
             int x = scanner.nextInt();
             int y = scanner.nextInt();
-            float soma = (float) x / y;
+            float divisao = (float) x / y;
 
             if (y == 0) {
                 System.out.println("divisao impossivel");
-            } else if (x == 0) {
-                System.out.println("0.0");
             } else {
-                System.out.println(soma);
+                System.out.println(divisao);
             }
         }
     }
