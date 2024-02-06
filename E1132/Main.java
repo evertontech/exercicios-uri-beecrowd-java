@@ -20,6 +20,7 @@ public class Main {
                 soma = soma + i;
             }
         }
+        
         System.out.println(soma);
     }
 }
