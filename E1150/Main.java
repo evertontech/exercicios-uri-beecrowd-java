@@ -12,16 +12,11 @@ public class Main {
 
         do {
             z = scanner.nextInt();
-
         } while (z <= x);
 
-        for (int i = 0; i <= z + 1; ++i) {
-            soma = soma + (x + i);
+        for (int i = x; soma <= z + 1; ++i) {
+            soma = soma + i;
             contador++;
-
-            if (soma > z) {
-                break;
-            }
         }
 
         System.out.println(contador);
