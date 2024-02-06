@@ -5,10 +5,9 @@ public class Main {
         double s = 1;
         double numeroDobro = 2;
 
-        for ( int i = 3; i < 39; ++i) {
+        for ( int i = 3; i < 39; i = i + 2) {
             s = s + i / numeroDobro;
             numeroDobro = numeroDobro * 2;
-            i = i + 1;
         }
 
         System.out.printf("%.2f\n", s);
