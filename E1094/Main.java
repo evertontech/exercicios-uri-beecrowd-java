@@ -38,9 +38,9 @@ public class Main {
         System.out.println("Total de sapos: " + totalSapos);
 
         // Calcula os percentuais
-        double percentualCoelhos = ((double) totalCoelhos / total) * 100;
-        double percentualRatos = ((double) totalRatos / total) * 100;
-        double percentualSapos = ((double) totalSapos / total) * 100;
+        double percentualCoelhos = (double) totalCoelhos / total * 100;
+        double percentualRatos = (double) totalRatos / total * 100;
+        double percentualSapos = (double) totalSapos / total * 100;
 
         System.out.printf("Percentual de coelhos: %.2f %%\n", percentualCoelhos);
         System.out.printf("Percentual de ratos: %.2f %%\n", percentualRatos);
