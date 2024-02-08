@@ -1,26 +1,27 @@
 package E1146;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Integer> numero = new ArrayList<>();
+        StringBuilder resultado = new StringBuilder();
+        int x;
+
         while (true) {
-            int x = scanner.nextInt();
+            x = scanner.nextInt();
 
-            if (x == 0) {
-                 break;
-             } else {
-                numero.add(x);
-             }
-         }
+            if (x == 0) break;
 
-        for (int i = 1; i <= numero.size(); ++i) {
-            System.out.print(numero.get(i) + " ");
+            resultado.setLength(0);
+
+            resultado.append("1");
+
+            for (int i = 2; i <= x; ++i) {
+                resultado.append(" ").append(i);
+            }
+
+            System.out.println(resultado);
         }
-
-        scanner.close();
     }
 }
