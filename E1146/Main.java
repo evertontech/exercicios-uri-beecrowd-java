@@ -1,11 +1,13 @@
 package E1146;
 
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        StringBuilder resultado = new StringBuilder();
+
         int x;
 
         while (true) {
@@ -13,15 +15,9 @@ public class Main {
 
             if (x == 0) break;
 
-            resultado.setLength(0);
-
-            resultado.append("1");
-
-            for (int i = 2; i <= x; ++i) {
-                resultado.append(" ").append(i);
-            }
-
-            System.out.println(resultado);
+            System.out.println(IntStream.rangeClosed(1, x)
+                    .mapToObj(Integer::toString)
+                    .collect(Collectors.joining(" ")));
         }
     }
 }
