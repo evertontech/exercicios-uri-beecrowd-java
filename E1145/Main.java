@@ -8,20 +8,14 @@ public class Main {
         int x = scanner.nextInt();
         int y = scanner.nextInt();
 
-        for (int i = 1; i <= y; ++i) {
-            if (i == x) {
-                System.out.print(i + " ");
+
+        for (int i = 1; i <= y; i++) {
+            System.out.printf("%d", i);
+
+            if (i % x == 0) {
                 System.out.println();
-                continue;
-            }
-
-            if (i > x) {
-                for (int j = 1; j <= x; ++j) {
-                    System.out.print(j + " ");
-                }
-
-            } else {
-                System.out.print(i + " ");
+            } else if (i != y) {
+                System.out.print(" ");
             }
         }
     }
