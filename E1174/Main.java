@@ -6,20 +6,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double[] vetorReais = new double[100];
+        float[] vetorReais = new float[100];
 
         for (int i = 0; i < 100; ++i) {
-            double x = scanner.nextDouble();
-            if (x <= 10) {
-                vetorReais[i] = x;
-            }
-
-
+            vetorReais[i] = scanner.nextFloat();
         }
 
         for (int j = 0; j < 100; ++j) {
-            System.out.printf("A[%d] = %.1f\n", j, vetorReais[j]);
+            if (vetorReais[j] <= 10) {
+                System.out.printf("A[%d] = %.1f\n", j, vetorReais[j]);
+            }
         }
-
     }
 }
