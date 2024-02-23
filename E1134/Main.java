@@ -14,9 +14,15 @@ public class Main {
             quantidadeDeEntrada = scanner.nextInt();
 
             switch (quantidadeDeEntrada) {
-                case 1: contadorAlcool++; break;
-                case 2: contadorGasolina++; break;
-                case 3: contadorDiesel++; break;
+                case 1:
+                    contadorAlcool++;
+                    break;
+                case 2:
+                    contadorGasolina++;
+                    break;
+                case 3:
+                    contadorDiesel++;
+                    break;
             }
 
         } while (quantidadeDeEntrada != 4);
