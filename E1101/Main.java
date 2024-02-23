@@ -10,7 +10,7 @@ public class Main {
             int m = scanner.nextInt();
             int n = scanner.nextInt();
 
-            if (m <= 0 || n <= 0 ) {
+            if (m <= 0 || n <= 0) {
                 break;
             }
 
