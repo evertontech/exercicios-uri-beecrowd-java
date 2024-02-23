@@ -14,7 +14,7 @@ public class Main {
 
         if ((renda > 0) && (renda <= 2000.00)) {
             System.out.println("Isento");
-        } else if ((renda >= 2000.01)  && (renda <= 3000.00)) {
+        } else if ((renda >= 2000.01) && (renda <= 3000.00)) {
             faixa2 = renda - 2000;
             impostoFaixa2 = faixa2 * 0.08f;
             System.out.printf("R$ %.2f\n", impostoFaixa2);
