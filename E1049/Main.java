@@ -13,21 +13,21 @@ public class Main {
             if (palavra2.equals("ave")) {
                 if (palavra3.equals("carnivoro")) {
                     System.out.println("aguia");
-                } else if (palavra3.equals("onivoro")){
+                } else if (palavra3.equals("onivoro")) {
                     System.out.println("pomba");
                 }
 
             } else if (palavra2.equals("mamifero")) {
                 if (palavra3.equals("onivoro")) {
                     System.out.println("homem");
-                } else if (palavra3.equals("herbivoro")){
+                } else if (palavra3.equals("herbivoro")) {
                     System.out.println("vaca");
                 }
 
             }
 
         } else if (palavra1.equals("invertebrado")) {
-            if ( palavra2.equals("inseto")) {
+            if (palavra2.equals("inseto")) {
                 if (palavra3.equals("hematofago")) {
                     System.out.println("pulga");
                 } else if (palavra3.equals("herbivoro")) {
