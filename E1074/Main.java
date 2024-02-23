@@ -16,15 +16,13 @@ public class Main {
             } else {
                 if (x % 2 == 0) {
                     System.out.print("EVEN ");
-                }
-                else {
+                } else {
                     System.out.print("ODD ");
                 }
 
                 if (x > 0) {
                     System.out.println("POSITIVE");
-                }
-                else {
+                } else {
                     System.out.println("NEGATIVE");
                 }
             }
