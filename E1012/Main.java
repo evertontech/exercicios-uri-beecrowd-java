@@ -13,7 +13,7 @@ public class Main {
         double areaDoCirculo = pi * Math.pow(c, 2);
         double areaDoTrapezio = ((a + b) * c) / 2;
         double areaDoQuadrado = b * b;
-        double areaDoRetangulo = a * b ;
+        double areaDoRetangulo = a * b;
 
         System.out.printf("TRIANGULO: %.3f\n", areaDoTriangulo);
         System.out.printf("CIRCULO: %.3f\n", areaDoCirculo);
