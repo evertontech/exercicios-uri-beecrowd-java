@@ -23,10 +23,10 @@ public class Main {
         }
 
         if (operacao.equals("S")) {
-            System.out.println(soma);
+            System.out.printf("%.1f\n", soma);
         } else {
             float media = soma / 12;
-            System.out.println(media);
+            System.out.printf("%.1f\n", media);
         }
     }
 }
