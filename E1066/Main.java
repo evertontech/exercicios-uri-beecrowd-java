@@ -30,7 +30,7 @@ public class Main {
             } else if (valoresDeEntrada > 0) {
                 contadorPositivoImpares = contadorPositivoImpares + 1;
                 contadorImpares = contadorImpares + 1;
-            } else if (valoresDeEntrada < 0){
+            } else if (valoresDeEntrada < 0) {
                 contadorNegativoImpares = contadorNegativoImpares + 1;
                 contadorImpares = contadorImpares + 1;
             } else {
