@@ -6,30 +6,25 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();
-        int diferencaPopulacao;
-        double diferencaTaxas;
-        double taxaCrescimento;
-        double crescimentoAnual;
-        double tempoParaUltrapassar;
+
 
         for (int i = 0; i < t; ++i) {
-            int populacaoA = scanner.nextInt();
-            int populacaoB = scanner.nextInt();
-            double taxaA = scanner.nextDouble();
-            double taxaB = scanner.nextDouble();
+            String linha1 = scanner.nextLine();
+//            String pb = scanner.nextLine();
+//            String g1 = scanner.nextLine();
+//            String g2 = scanner.nextLine();
 
-            diferencaPopulacao = populacaoB - populacaoA;
-            diferencaTaxas = taxaB - taxaA;
-            taxaCrescimento = diferencaPopulacao * (diferencaTaxas / 100);
-            crescimentoAnual = (taxaCrescimento * 100) / diferencaPopulacao;
-            tempoParaUltrapassar = (diferencaPopulacao / crescimentoAnual) + crescimentoAnual;
+            String[] vetorString = linha1.split(" ");
 
-            if (tempoParaUltrapassar > 100) {
-                System.out.println("Mais de 1 seculo.");
-                break;
-            } else {
-                System.out.println(tempoParaUltrapassar + "anos.");
-            }
+            int pa = Integer.parseInt(vetorString[0]);
+            int pb = Integer.parseInt(vetorString[1]);
+            double g1 = Double.parseDouble(vetorString[2]);
+            double g2 = Double.parseDouble(vetorString[3]);
+
+            System.out.println(pa);
+            System.out.println(pb);
+            System.out.println(g1);
+            System.out.println(g2);
         }
 
     }
