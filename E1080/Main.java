@@ -1,4 +1,5 @@
 package E1080;
+
 import java.util.Scanner;
 
 public class Main {
