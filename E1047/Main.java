@@ -22,7 +22,7 @@ public class Main {
         int duracaoJogoEmHoras = duracaoJogoEmMinutos / 60;
         duracaoJogoEmMinutos = duracaoJogoEmMinutos % 60;
 
-        System.out.println("O JOGO DUROU " + duracaoJogoEmHoras +  " HORA(S) E "+ duracaoJogoEmMinutos + " MINUTO(S)");
+        System.out.println("O JOGO DUROU " + duracaoJogoEmHoras + " HORA(S) E " + duracaoJogoEmMinutos + " MINUTO(S)");
     }
 }
 
