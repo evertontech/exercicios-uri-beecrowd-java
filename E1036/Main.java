@@ -16,8 +16,8 @@ public class Main {
         if (a == 0 || delta < 0) {
             System.out.println("Impossivel calcular");
         } else {
-            double r1 = (- b + raizDelta) / (2 * a);
-            double r2 = (- b - raizDelta) / (2 * a);
+            double r1 = (-b + raizDelta) / (2 * a);
+            double r2 = (-b - raizDelta) / (2 * a);
             System.out.printf("R1 = %.5f\n", r1);
             System.out.printf("R2 = %.5f\n", r2);
         }
