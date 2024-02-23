@@ -12,7 +12,7 @@ public class Main {
 
             if (x > y) {
                 System.out.println("Decrescente");
-            } else if (x < y){
+            } else if (x < y) {
                 System.out.println("Crescente");
             } else {
                 break;
