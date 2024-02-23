@@ -12,7 +12,7 @@ public class Main {
             int j3 = (int) Math.pow(i, 3);
 
             System.out.println(i + " " + j2 + " " + j3);
-            System.out.println(i + " " + (j2 + 1) + " " +  (j3 + 1));
+            System.out.println(i + " " + (j2 + 1) + " " + (j3 + 1));
         }
     }
 }
