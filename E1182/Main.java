@@ -20,10 +20,8 @@ public class Main {
         }
 
         for (int i = 0; i < 12; ++i) {
-            for (int j = 0; j < 12; ++j) {
-                soma += matriz[c][i];
-                media += matriz[c][i];
-            }
+            soma += matriz[i][c];
+            media += matriz[i][c];
         }
 
         if (t.equals("S")) {
