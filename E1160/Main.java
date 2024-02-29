@@ -7,25 +7,32 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();
 
-
         for (int i = 0; i < t; ++i) {
-            String linha1 = scanner.nextLine();
-//            String pb = scanner.nextLine();
-//            String g1 = scanner.nextLine();
-//            String g2 = scanner.nextLine();
+            long populacaoA = scanner.nextLong();
+            long populacaoB = scanner.nextLong();
+            double g1 = scanner.nextDouble();
+            double g2 = scanner.nextDouble();
 
-            String[] vetorString = linha1.split(" ");
+            int quantidadeDeAnos = 0;
 
-            int pa = Integer.parseInt(vetorString[0]);
-            int pb = Integer.parseInt(vetorString[1]);
-            double g1 = Double.parseDouble(vetorString[2]);
-            double g2 = Double.parseDouble(vetorString[3]);
+            while (populacaoA <= populacaoB) {
+                populacaoA += (long) (populacaoA * g1 / 100);
+                populacaoB += (long) (populacaoB * g2 / 100);
+                quantidadeDeAnos++;
 
-            System.out.println(pa);
-            System.out.println(pb);
-            System.out.println(g1);
-            System.out.println(g2);
+                if (quantidadeDeAnos > 100) {
+                    break;
+                }
+            }
+
+            if (quantidadeDeAnos > 100) {
+                System.out.println("Mais de 1 seculo.");
+            } else {
+                System.out.println(quantidadeDeAnos + " anos.");
+            }
         }
-
     }
 }
+
+
+
