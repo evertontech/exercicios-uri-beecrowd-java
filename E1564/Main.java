@@ -15,7 +15,5 @@ public class Main {
                 System.out.println("vai ter duas!");
             }
         }
-
-        scanner.close();
     }
 }
