@@ -11,12 +11,10 @@ public class Main {
         int proximo;
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < n; ++i) {
-            sb.append(anterior);
+        sb.append(anterior);
 
-            if (i != n - 1) {
-                sb.append(" ");
-            }
+        for (int i = 1; i < n; ++i) {
+            sb.append(" ").append(atual);
             proximo = anterior + atual;
             anterior = atual;
             atual = proximo;
