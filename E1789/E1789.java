@@ -5,32 +5,27 @@ import java.util.Scanner;
 public class E1789 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int nivel1 = scanner.nextInt();
-        int nivel2 = scanner.nextInt();
-        int nivel3 = scanner.nextInt();
 
-        for (int i = 0; i < n; ++i) {
-            int v = scanner.nextInt();
+        while (scanner.hasNext()) {
+            int maiorValor = 0;
+            int n = scanner.nextInt();
 
-            if (v < 10) {
-                nivel1 = 1;
-            } else if (nivel2 >= 10 && nivel2 <= 20) {
-                nivel2 = 1;
-            } else if (v >= 20) {
-                nivel3 = 1;
+            for (int i = 0; i < n; ++i) {
+                int velocidade = scanner.nextInt();
+
+                if (maiorValor <= velocidade) {
+                    maiorValor = velocidade;
+                }
             }
 
-            if (nivel3 == 1) {
-                System.out.println("3");
-                break;
-            } else if (nivel2 == 1) {
-                System.out.println("2");
-                break;
-            } else if (nivel1 == 1) {
+            if (maiorValor < 10) {
                 System.out.println("1");
-                break;
+            } else if (maiorValor < 20) {
+                System.out.println("2");
+            } else {
+                System.out.println("3");
             }
         }
     }
 }
+
