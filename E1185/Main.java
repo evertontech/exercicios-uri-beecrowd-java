@@ -9,7 +9,6 @@ public class Main {
         float soma = 0.0f;
 
         String t = scanner.nextLine();
-        String linhaBranco = scanner.nextLine();
 
         for (int i = 0; i < 12; ++i) {
             for (int j = 0; j < 12; ++j) {
@@ -21,7 +20,7 @@ public class Main {
 
         for (int i = 0; i < 12; ++i) {
             for (int j = 0; j < 12; ++j) {
-                if ((i + j) < 5) {
+                if ((i + j) < 11) {
                     soma += matriz[i][j];
                     contador++;
                 }
