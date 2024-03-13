@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class E1847 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
@@ -33,11 +34,11 @@ public class E1847 {
             System.out.println(":(");
         }
 
-        if (a == b && c > b) { // ok
+        if (a == b && c > b) {
             System.out.println(":)");
         }
 
-        if (a == b && b > c) { // ok
+        if (a == b && b >= c) {
             System.out.println(":(");
         }
     }
