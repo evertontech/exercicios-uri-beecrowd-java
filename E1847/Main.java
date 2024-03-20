@@ -2,7 +2,7 @@ package E1847;
 
 import java.util.Scanner;
 
-public class E1847 {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
