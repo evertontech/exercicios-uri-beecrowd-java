@@ -1,6 +1,8 @@
+package E1930;
+
 import java.util.Scanner;
 
-public class E1930 {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int t1 = scanner.nextInt();
