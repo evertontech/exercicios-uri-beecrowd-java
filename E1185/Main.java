@@ -30,7 +30,6 @@ public class Main {
         if (t.equals("S")) {
             System.out.printf("%.1f\n", soma);
         } else if (t.equals("M")) {
-
             System.out.printf("%.1f\n", soma / contador);
         }
     }
