@@ -6,23 +6,22 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int quantidadeDeAlunos = scanner.nextInt();
-        float aprovado = 0;
+        float notaAprovada = 0;
         int matriculaAprovada = 0;
-        int contadorAprovado = 0;
+        boolean teveAprovacao = false;
 
         for (int i = 0; i < quantidadeDeAlunos; ++i) {
             int numeroDeMatricula = scanner.nextInt();
             float notaAluno = scanner.nextFloat();
 
-            if (notaAluno > aprovado && notaAluno >= 8) {
-                aprovado = notaAluno;
+            if (notaAluno > notaAprovada && notaAluno >= 8) {
+                notaAprovada = notaAluno;
                 matriculaAprovada = numeroDeMatricula;
-                contadorAprovado++;
-
+                teveAprovacao = true;
             }
         }
 
-        if (contadorAprovado > 0) {
+        if (teveAprovacao) {
             System.out.println(matriculaAprovada);
         } else {
             System.out.println("Minimum note not reached");
