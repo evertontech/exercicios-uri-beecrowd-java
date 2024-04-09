@@ -8,10 +8,10 @@ public class Main {
         long valorN = scanner.nextLong();
 
         String valorNConvertido = Long.toString(valorN);
-        String valorInvertido = "";
+        StringBuilder valorInvertido = new StringBuilder();
 
         for (int i = valorNConvertido.length() - 1; i >= 0; --i) {
-            valorInvertido += valorNConvertido.charAt(i);
+            valorInvertido.append(valorNConvertido.charAt(i));
         }
 
         System.out.println(valorInvertido);
