@@ -9,18 +9,13 @@ public class Main {
         scanner.nextLine();
 
         for (int i = 0; i < t; ++i) {
-            String nomePersonagem = scanner.nextLine();
-            //int forcaAplicada = scanner.nextInt();
-            //scanner.nextLine();
-            nomePersonagem.toUpperCase();
+            String entrada = scanner.nextLine();
 
-            if (nomePersonagem.equals("Thor")) {
+            if (entrada.toUpperCase().contains("THOR")) {
                 System.out.println("Y");
             } else {
                 System.out.println("N");
             }
-
-            //scanner.nextLine();
         }
     }
 }
