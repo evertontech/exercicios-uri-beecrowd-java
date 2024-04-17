@@ -35,6 +35,6 @@ public class Main {
             }
         }
 
-       System.out.printf("%.2f\n", precoTotal);
+        System.out.printf("%.2f\n", precoTotal);
     }
 }
