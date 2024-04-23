@@ -3,34 +3,32 @@ package E1957;
 import java.util.Scanner;
 
 public class Main {
-    public static void escreverHex(int valor, StringBuilder resultado) {
-        if (valor < 10) {
-            resultado.append(valor);
+    public static String converter(int numero) {
+        return switch (numero) {
+            case 10 -> "A";
+            case 11 -> "B";
+            case 12 -> "C";
+            case 13 -> "D";
+            case 14 -> "E";
+            case 15 -> "F";
+            default -> String.valueOf(numero);
+        };
+    }
+
+    public static void hexa(int valor) {
+        if (valor >= 16) {
+            hexa(valor / 16);
+            System.out.print(converter(valor % 16));
         } else {
-            resultado.append(switch (valor) {
-                case 10 -> "A";
-                case 11 -> "B";
-                case 12 -> "C";
-                case 13 -> "D";
-                case 14 -> "E";
-                case 15 -> "F";
-                default -> "";
-            });
+            System.out.print(converter(valor));
         }
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int v = scanner.nextInt();
-        StringBuilder resultado = new StringBuilder();
 
-        while (v >= 16) {
-            escreverHex(v % 16, resultado);
-            v = v / 16;
-        }
-
-        escreverHex(v, resultado);
-        resultado.reverse();
-        System.out.println(resultado);
+        hexa(v);
+        System.out.println();
     }
 }
