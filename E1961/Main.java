@@ -8,25 +8,22 @@ public class Main {
         int tamanhoDoPulo = scanner.nextInt();
         int numeroDeCasos = scanner.nextInt();
         int[] vetorN = new int[numeroDeCasos];
-        boolean vencedor = false;
+        boolean vencedor = true;
 
         for (int i = 0; i < numeroDeCasos; ++i) {
             int valor = scanner.nextInt();
             vetorN[i] = valor;
         }
 
-        for (int i = 1; i < numeroDeCasos; ++i) {
-            if ((vetorN[i] - vetorN[i - 1]) > tamanhoDoPulo) {
+        for (int i = 0; i < numeroDeCasos - 1; ++i) {
+            int valorAbs = Math.abs(vetorN[i] - vetorN[i + 1]);
+
+            if (valorAbs > tamanhoDoPulo) {
                 vencedor = false;
-            } else {
-                vencedor = true;
+                break;
             }
         }
 
-        if (vencedor) {
-            System.out.println("YOU WIN");
-        } else {
-            System.out.println("GAME OVER");
-        }
+        System.out.println(vencedor ? "YOU WIN" : "GAME OVER");
     }
 }
