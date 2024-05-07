@@ -12,27 +12,14 @@ public class Main {
             int codigoDoProduto = scanner.nextInt();
             int quantidade = scanner.nextInt();
 
-            switch (codigoDoProduto) {
-                case 1001:
-                    precoTotal += 1.50 * quantidade;
-                    break;
-
-                case 1002:
-                    precoTotal += 2.50 * quantidade;
-                    break;
-
-                case 1003:
-                    precoTotal += 3.50 * quantidade;
-                    break;
-
-                case 1004:
-                    precoTotal += 4.50 * quantidade;
-                    break;
-
-                case 1005:
-                    precoTotal += 5.50 * quantidade;
-                    break;
-            }
+            precoTotal += switch (codigoDoProduto) {
+                case 1001 -> 1.50 * quantidade;
+                case 1002 -> 2.50 * quantidade;
+                case 1003 -> 3.50 * quantidade;
+                case 1004 -> 4.50 * quantidade;
+                case 1005 -> 5.50 * quantidade;
+                default -> 0;
+            };
         }
 
         System.out.printf("%.2f\n", precoTotal);
